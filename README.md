@@ -1,2 +1,3 @@
 # BIG DATA Project_A1
-for BIG DATA Project communication and collaborate
+for BIG DATA Project communication and collaboration
+
