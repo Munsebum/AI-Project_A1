@@ -31,3 +31,20 @@ for BIG DATA Project communication and collaboration
 - 직접 train 하기에는 data 크기가 216GB로 용량부족하고 , computing power 도 부족함 
 - 우선 inference model 돌려보고 오류사항 계속 체크할 것
 
+
+
+## 6/17
+
+**Text To Speech**
+1. LPCtron (tacotron2 + LPCNet) 모델 사용 [github link](https://github.com/alokprasad/LPCTron)
+2. conda create 후 sh tts.sh을 통해 test 완료
+3. train을 위해 다음 명령어 시행
+```python3 preprocess.py --base_dir /media/alok/ws/sandbox/lpc_tacatron2/dataset --dataset LJSpeech-1.1```
+- 근데 짜증
+- 패키지 설치 똑같은 거 100번 중
+- 설치 방금했는데 또하고 또하고 또하고 또함
+- base랑 가상환경이랑 따로 설치되는거 같은데 공부하기 싫고 걍 100번 설치 하는 중
+- 설치하다가 퇴근 시간 돼서 퇴근할거임
+
+
+
