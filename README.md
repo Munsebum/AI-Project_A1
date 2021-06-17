@@ -31,3 +31,28 @@ for BIG DATA Project communication and collaboration
 - 직접 train 하기에는 data 크기가 216GB로 용량부족하고 , computing power 도 부족함 
 - 우선 inference model 돌려보고 오류사항 계속 체크할 것
 
+## 6/17
+
+**video captioning**
+
+1. 데이터가 두 분류 나뉘는 것을 확인
+   - ActivityNet-Entities / flickr30k
+2. 원본 레포지토리는 anet 을 이용. flickr 를 이용한 branch를 clone 해봄
+   - git clone -b flickr_branch --recursive https://github.com/facebookresearch/grounded-video-description
+3. flickr는 image data로 training, anet 은 영상 포함 -> 전기수는 flickr로 함
+4. flickr의 Pre-trained Models를 받아서 save 밑에 위치시킴
+5. Inference 시 없는 파일이 계속해서 존재
+   - Data Preparation 에서 찾아서 다운로드함. data/dic_anet.json 등
+   - dic_flickr는 찾지 못함
+
+현재 오류
+- 정확한 Inference 실행 코드 찾지못함 (arguments 설정값 찾아야 함)
+- 찾지 못한 필요 파일들 찾기
+- Issues 뒤져보기 (train 말고)
+
+남은 오류
+- Inference가 내 비디오를 돌려서 나오는건지.. visualization이 필요. 가야할 길 멀다
+
+
+
+
