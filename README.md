@@ -77,16 +77,16 @@ for BIG DATA Project communication and collaboration
 희란언니를 괴롭게 하다니       
 내가 오늘 librosa 혼쭐낸다   
 양꼬치 먹으러 즐겁게 다녀오셔요   
-혼쭐낸다는 녀석은 혼쭐났다고 한다.... :(
-알맞게 파악한지는 모르겠지만 librosa가 없다고 한 이유는 정말 없어서였다고 한다.
-import sys를 해서 어디서 package를 가져오나 봤더니 local에서 가져오는거 같았는데
-pip show librosa해서 보니까 가상환경에 깔려있었다.
-sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!    
+혼쭐낸다는 녀석은 혼쭐났다고 한다.... :(     
+알맞게 파악한지는 모르겠지만 librosa가 없다고 한 이유는 정말 없어서였다고 한다.     
+import sys를 해서 어디서 package를 가져오나 봤더니 local에서 가져오는거 같았는데    
+pip show librosa해서 보니까 가상환경에 깔려있었다.    
+sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!         
 
 
 
-된 줄 알았는데 또 다른 오류 발생.
-눈물날 것 같아서 이만 로그를 그만  
+된 줄 알았는데 또 다른 오류 발생.     
+눈물날 것 같아서 이만 로그를 그만
 
 
 
