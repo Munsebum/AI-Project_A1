@@ -72,4 +72,10 @@ for BIG DATA Project communication and collaboration
 - 설치하다가 퇴근 시간 돼서 퇴근할거임
 
 
+## 6/18
+**librosa 나쁜놈**
+희란언니를 괴롭게 하다니
+내가 오늘 librosa 
+
+
 
