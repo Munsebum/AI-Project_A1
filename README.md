@@ -76,6 +76,7 @@ for BIG DATA Project communication and collaboration
 **librosa 나쁜놈**     
 희란언니를 괴롭게 하다니
 내가 오늘 librosa 혼쭐낸다
+양꼬치 먹으러 즐겁게 다녀오셔요 
 
 
 
