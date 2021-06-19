@@ -1,3 +1,8 @@
+import sys
+sys.path.append('/home/piai/anaconda3/envs/tts3/lib/python3.6/site-packages')
+print(sys.path)
+print(sys.executable)
+
 import argparse
 from tacotron.synthesize import tacotron_synthesize
 #from wavenet_vocoder.synthesize import wavenet_synthesize

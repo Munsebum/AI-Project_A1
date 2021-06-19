@@ -69,7 +69,7 @@ class Feeder:
         #Mark finished sequences with 1s
         self._token_pad = 1.
 
-        with tf.device('/cpu:0'):
+        with tf.device('/gpu:0'):
             # Create placeholders for inputs and targets. Don't specify batch size because we want
             # to be able to feed different batch sizes at eval time.
             self._placeholders = [
