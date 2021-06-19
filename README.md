@@ -112,3 +112,27 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 1. kss data 전처리 (참고 블로그 참고)
 2. model train
 3. waveglow 모델
+
+**video captioning**
+1. Flickr에서 필요한 feature 데이터들을 전체 다운로드 했다. (Anet은 216GB라 하지 못함)
+2. command 우선 확정 (visualization X)
+```
+python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size 50 --cuda --num_workers 10 --max_epoch 50 --inference_only --start_from save/flickr-sup-0.1-0.1-0.1-run1 --id flickr-sup-0.1-0.1-0.1-run1 --val_split test --seq_length 20 --language_eval --eval_obj_grounding --obj_interact
+```
+3. 하찮은 영어로 에러에 대한 question issue 생성 [링크](https://github.com/facebookresearch/grounded-video-description/issues/37)
+4. 전기수분한테도 문의메일 보내놓음
+5. inference my own video 과정에 대해 학습함 
+- sampling the video (비디오를 프레임을 쪼갠다. 비디오당 10frame만 했다고 한다.)
+- calculate the features of the sampled frames (프레임→feature extraction)
+ - Region features: can be obtained using extract_features.py and Detectron
+ - Frame-wise features : I have no idea how to calculate them
+- use code for inference (드디어 inference code를 쓸 수 있게 된다.)
+**목표가 inference 라면 caption annotations는 필요없다** = 당연
+6. 꼬인게 있을 수 있어 다 지우고 다시 시작
+
+
+현재 에러
+- 실행 시 data/flickr30k/flickr30k_detection_vg_X-101-64x4d-FPN_2x_feature/6827875949.npy 가 없다고 뜬다. 여기서 npy 파일은 eval 로 split 된 이미지 중 하나인데 실제로  data/flickr30k/flickr30k_detection_vg_X-101-64x4d-FPN_2x_feature 폴더의 npy 파일들을 dic_flickr.json 에서 확인해 봤을 때에는 train split 이미지의 feature extraction 된 npy 파일만 존재하는 걸 볼 수 있었다.
+
+추후 할거
+visualization / own video 로 inference 
