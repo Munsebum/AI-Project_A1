@@ -46,5 +46,26 @@ for BIG DATA Project communication and collaboration
 - base랑 가상환경이랑 따로 설치되는거 같은데 공부하기 싫고 걍 100번 설치 하는 중
 - 설치하다가 퇴근 시간 돼서 퇴근할거임
 
+## 6/18
 
+**Text To Speech**
+1. LPCtron에 librosa는 지우디우가 해결해 줬음
+2. 그런데 serialized_options 오류로 하루종일 개고생함
+3. tensorflow 랑 protobuf 버전 문제인거 같은데 해결 못함
 
+4. 그래서 모델 바꿈
+5. tacotron2 + waveglow 모델 
+   - 이거는 2021년 4월 모델임
+   - 괜히 옛날 모델 갖고 난리난리였던거 같음
+
+[참고 블로그](https://joungheekim.github.io/2021/04/02/code-review/)
+[원본 tacotron2 git link](https://github.com/NVIDIA/tacotron2)
+   - package 설치 및 train에 도움 받을 것
+[한국어 tacotron2 git link](https://github.com/JoungheeKim/tacotron2)
+[hccho2 git link](https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS)
+   - 크게 도움 받을 일은 없으나 우선 참고
+
+앞으로 해야할 일
+1. kss data 전처리 (참고 블로그 참고)
+2. model train
+3. waveglow 모델
