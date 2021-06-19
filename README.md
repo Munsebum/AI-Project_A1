@@ -64,6 +64,7 @@ for BIG DATA Project communication and collaboration
 - base랑 가상환경이랑 따로 설치되는거 같은데 공부하기 싫고 걍 100번 설치 하는 중
 - 설치하다가 퇴근 시간 돼서 퇴근할거임
 
+## 6/18
 
 ## 6/18
 **librosa 나쁜놈**     
@@ -75,9 +76,17 @@ for BIG DATA Project communication and collaboration
 import sys를 해서 어디서 package를 가져오나 봤더니 local에서 가져오는거 같았는데    
 pip show librosa해서 보니까 가상환경에 깔려있었다.    
 sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!         
+**Text To Speech**
+1. LPCtron에 librosa는 지우디우가 해결해 줬음
+2. 그런데 serialized_options 오류로 하루종일 개고생함
+3. tensorflow 랑 protobuf 버전 문제인거 같은데 해결 못함
 
 된 줄 알았는데 또 다른 오류 발생.     
 눈물날 것 같아서 이만 로그를 그만
+4. 그래서 모델 바꿈
+5. tacotron2 + waveglow 모델 
+   - 이거는 2021년 4월 모델임
+   - 괜히 옛날 모델 갖고 난리난리였던거 같음
 
 쓰고 싶었는데 또 쓴다.
 다음 Error를 검색해보니 tensorflow와 protobuf에서 문제가 생긴듯 하였다.
@@ -91,3 +100,15 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 하루종일 tensorflow와 protobuf에 시달렸다..   
 결론적으로 말하면 해결을 못하고 새로운 모델을 구했다    
 **천재 희란 짱짱맨**
+
+[참고 블로그](https://joungheekim.github.io/2021/04/02/code-review/)
+[원본 tacotron2 git link](https://github.com/NVIDIA/tacotron2)
+   - package 설치 및 train에 도움 받을 것
+[한국어 tacotron2 git link](https://github.com/JoungheeKim/tacotron2)
+[hccho2 git link](https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS)
+   - 크게 도움 받을 일은 없으나 우선 참고
+
+앞으로 해야할 일
+1. kss data 전처리 (참고 블로그 참고)
+2. model train
+3. waveglow 모델

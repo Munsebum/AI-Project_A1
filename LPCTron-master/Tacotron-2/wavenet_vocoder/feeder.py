@@ -63,7 +63,7 @@ class Feeder:
         #Get conditioning status
         self.local_condition, self.global_condition = self._check_conditions()
 
-        with tf.device('/cpu:0'):
+        with tf.device('/gpu:0'):
             # Create placeholders for inputs and targets. Don't specify batch size because we want
             # to be able to feed different batch sizes at eval time.
             if is_scalar_input(hparams.input_type):

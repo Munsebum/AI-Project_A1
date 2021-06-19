@@ -1,3 +1,9 @@
+import sys
+sys.path.append('/home/piai/anaconda3/envs/tts3/lib/python3.6/site-packages')
+sys.path.append('/home/piai/anaconda3/lib/python3.8/site-packages')
+print(sys.path)
+print(sys.executable)
+
 import argparse
 from multiprocessing import cpu_count
 import os
