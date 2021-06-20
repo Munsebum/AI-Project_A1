@@ -10,6 +10,9 @@ workers = []
 job_id = time.strftime("%Y_%m_%d-%H%M%S")
 argslist.append("--group_name=group_{}".format(job_id))
 
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(device)
+
 for i in range(num_gpus):
     argslist.append('--rank={}'.format(i))
     stdout = None if i == 0 else open("logs/{}_GPU_{}.log".format(job_id, i),

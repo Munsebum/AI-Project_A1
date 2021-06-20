@@ -256,6 +256,8 @@ def train(output_directory, log_directory, checkpoint_path, warm_start, n_gpus,
 
 
 if __name__ == '__main__':
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(device)
     parser = argparse.ArgumentParser()
     parser.add_argument('-o', '--output_directory', type=str, required=True,
                         help='directory to save checkpoints')

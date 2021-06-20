@@ -1,0 +1,8 @@
+FP16 Run: True
+Dynamic Loss Scaling: True
+Distributed Run: True
+cuDNN Enabled: True
+cuDNN Benchmark: False
+Initializing Distributed
+Done initializing distributed
+Epoch: 0
