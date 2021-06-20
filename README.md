@@ -73,7 +73,15 @@ for BIG DATA Project communication and collaboration
 알맞게 파악한지는 모르겠지만 librosa가 없다고 한 이유는 정말 없어서였다고 한다.     
 import sys를 해서 어디서 package를 가져오나 봤더니 local에서 가져오는거 같았는데    
 pip show librosa해서 보니까 가상환경에 깔려있었다.    
-sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!         
+sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!       
+된 줄 알았는데 또 다른 오류 발생.     
+눈물날 것 같아서 이만 로그를 그만      
+쓰고 싶었는데 또 쓴다.
+다음 Error를 검색해보니 tensorflow와 protobuf에서 문제가 생긴듯 하였다.       
+근데 이걸 해결하는 과정에서 무언가 단단히 꼬인듯,,     
+원래 꼬인 문젠지 내가 꼬아 놓은 문젠지 확신이 가지 않는다     
+환경설정이 넘모너무 싫다    
+- 이만 퇴근하겠다!       
 
 ## 6/19
 **달리즈아아** => 세시출근..   
@@ -85,20 +93,10 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 1. LPCtron에 librosa는 지우디우가 해결해 줬음
 2. 그런데 serialized_options 오류로 하루종일 개고생함
 3. tensorflow 랑 protobuf 버전 문제인거 같은데 해결 못함
-
-된 줄 알았는데 또 다른 오류 발생.     
-눈물날 것 같아서 이만 로그를 그만
 4. 그래서 모델 바꿈
 5. tacotron2 + waveglow 모델 
    - 이거는 2021년 4월 모델임
    - 괜히 옛날 모델 갖고 난리난리였던거 같음
-
-쓰고 싶었는데 또 쓴다.
-다음 Error를 검색해보니 tensorflow와 protobuf에서 문제가 생긴듯 하였다.
-근데 이걸 해결하는 과정에서 무언가 단단히 꼬인듯,,
-원래 꼬인 문젠지 내가 꼬아 놓은 문젠지 확신이 가지 않는다
-환경설정이 넘모너무 싫다    
-- 이만 퇴근하겠다!    
      
 
 [참고 블로그](https://joungheekim.github.io/2021/04/02/code-review/)          
