@@ -65,8 +65,6 @@ for BIG DATA Project communication and collaboration
 - 설치하다가 퇴근 시간 돼서 퇴근할거임
 
 ## 6/18
-
-## 6/18
 **librosa 나쁜놈**     
 희란언니를 괴롭게 하다니       
 내가 오늘 librosa 혼쭐낸다   
@@ -76,6 +74,13 @@ for BIG DATA Project communication and collaboration
 import sys를 해서 어디서 package를 가져오나 봤더니 local에서 가져오는거 같았는데    
 pip show librosa해서 보니까 가상환경에 깔려있었다.    
 sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어주었더니 오류가 해결!         
+
+## 6/19
+**달리즈아아** => 세시출근..   
+하루종일 tensorflow와 protobuf에 시달렸다..   
+결론적으로 말하면 해결을 못하고 새로운 모델을 구했다    
+**천재 희란 짱짱맨**
+
 **Text To Speech**
 1. LPCtron에 librosa는 지우디우가 해결해 줬음
 2. 그런데 serialized_options 오류로 하루종일 개고생함
@@ -94,18 +99,15 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 원래 꼬인 문젠지 내가 꼬아 놓은 문젠지 확신이 가지 않는다
 환경설정이 넘모너무 싫다    
 - 이만 퇴근하겠다!    
+     
 
-## 6/19
-**달리즈아아** => 세시출근..   
-하루종일 tensorflow와 protobuf에 시달렸다..   
-결론적으로 말하면 해결을 못하고 새로운 모델을 구했다    
-**천재 희란 짱짱맨**
-
-[참고 블로그](https://joungheekim.github.io/2021/04/02/code-review/)
-[원본 tacotron2 git link](https://github.com/NVIDIA/tacotron2)
-   - package 설치 및 train에 도움 받을 것
-[한국어 tacotron2 git link](https://github.com/JoungheeKim/tacotron2)
-[hccho2 git link](https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS)
+[참고 블로그](https://joungheekim.github.io/2021/04/02/code-review/)          
+[원본 tacotron2 git link](https://github.com/NVIDIA/tacotron2)     
+   - package 설치 및 train에 도움 받을 것    
+        
+        
+[한국어 tacotron2 git link](https://github.com/JoungheeKim/tacotron2)     
+[hccho2 git link](https://github.com/hccho2/Tacotron2-Wavenet-Korean-TTS)      
    - 크게 도움 받을 일은 없으나 우선 참고
 
 앞으로 해야할 일
