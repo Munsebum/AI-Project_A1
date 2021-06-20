@@ -139,7 +139,7 @@ python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size
 추후 할거
 visualization / own video 로 inference 
 
-##6/20
+## 6/20
 희란언니가 training에 성공했다.     
 이제 더 깊은 모델 공부가 필요하다.     
 윤수는 전기수로부터 답 메일을 받았다.     
