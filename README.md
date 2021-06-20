@@ -7,7 +7,7 @@ for BIG DATA Project communication and collaboration
 
 ## 6/16
 
-**video captioning**
+### **video captioning**
 
 1. 전기수(8기) 연구인턴 참고. [github link](https://github.com/Hinterhalter/CCTV_Video_Captioning)
 2. 그 중 [grounded-video-description](https://github.com/facebookresearch/grounded-video-description) 참고 
@@ -33,7 +33,7 @@ for BIG DATA Project communication and collaboration
 
 ## 6/17
 
-**video captioning**
+### **video captioning**
 
 1. 데이터가 두 분류 나뉘는 것을 확인
    - ActivityNet-Entities / flickr30k
@@ -53,7 +53,7 @@ for BIG DATA Project communication and collaboration
 남은 오류
 - Inference가 내 비디오를 돌려서 나오는건지.. visualization이 필요. 가야할 길 멀다
 
-**Text To Speech**
+### **Text To Speech**
 1. LPCtron (tacotron2 + LPCNet) 모델 사용 [github link](https://github.com/alokprasad/LPCTron)
 2. conda create 후 sh tts.sh을 통해 test 완료
 3. train을 위해 다음 명령어 시행
@@ -81,7 +81,7 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 결론적으로 말하면 해결을 못하고 새로운 모델을 구했다    
 **천재 희란 짱짱맨**
 
-**Text To Speech**
+### **Text To Speech**
 1. LPCtron에 librosa는 지우디우가 해결해 줬음
 2. 그런데 serialized_options 오류로 하루종일 개고생함
 3. tensorflow 랑 protobuf 버전 문제인거 같은데 해결 못함
@@ -115,13 +115,13 @@ sys.path.append()해서 가상환경의 패키지들이 있는 위치를 넣어�
 2. model train
 3. waveglow 모델
 
-**video captioning**
+### **video captioning**
 1. Flickr에서 필요한 feature 데이터들을 전체 다운로드 했다. (Anet은 216GB라 하지 못함)
 2. command 우선 확정 (visualization X)
 ```
 python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size 50 --cuda --num_workers 10 --max_epoch 50 --inference_only --start_from save/flickr-sup-0.1-0.1-0.1-run1 --id flickr-sup-0.1-0.1-0.1-run1 --val_split test --seq_length 20 --language_eval --eval_obj_grounding --obj_interact
 ```
-3. 하찮은 영어로 에러에 대한 question issue 생성 [링크](https://github.com/facebookresearch/grounded-video-description/issues/37)
+3. 하찮은 영어로 에러에 대한 question issue 생성 [링크](https://github.com/facebookresearch/grounded-video-description/issues/37) but 웬만큼 해결되어 지웠다 ㅎㅎ
 4. 전기수분한테도 문의메일 보내놓음
 5. inference my own video 과정에 대해 학습함 
 - sampling the video (비디오를 프레임을 쪼갠다. 비디오당 10frame만 했다고 한다.)
