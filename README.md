@@ -146,7 +146,6 @@ visualization / own video 로 inference
 주제는 훌륭하다고 하지만, 확실히 비디오 캡셔닝이 큰 일이라고 말씀하셨다.    
 윤수,,화이팅!      
 
-## 6/20
 ### **Text To Speech**
 오늘 본 에러 리스트(기억나는)
 
@@ -167,3 +166,33 @@ visualization / own video 로 inference
 6. 기타 등등... 이제 생각안남
 
 할게 많은데 정확하게 listup이 안된다. 내일 다시 써야징
+
+### **Video Captioning**
+grounded video description 에서 이미 준비된 (feature extract) test dataset 의 inference 성공
+[!inf](./inf.png)
+   - flickr dataset (pretrained model) 사용
+   - main.py 를 전기수의 main.py로 대체[링크](https://github.com/Hinterhalter/CCTV_Video_Captioning)
+   - vis/flickr-sup-0.1-0.1-0.1-run1 경로 직접 생성
+   - command : 
+```
+python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size 50 --cuda --num_workers 10 --max_epoch 50 --inference_only --start_from save/flickr-sup-0.1-0.1-0.1-run1 --id flickr-sup-0.1-0.1-0.1-run1 --val_split test --seq_length 20 --obj_interact --eval_obj_grounding --vis_attn
+```
+   
+하지만 my own video를 inference 하려면 많은 작업들이 추가적으로 필요하다.
+1. sampling the video
+2. calculate the features of the sampled frames:
+   - Region features
+   - Frame-wise features 
+3. Finally use grounded-video-description for inference
+- 전기수분도 grounded video description에서 new video를 captioning 하는 것은 실패하셨다고 한다.
+- 또한 지금 수행한 flickr가 아닌 AntityNet 으로 수행해야 Image captioning 이 아닌 Video captioning..
+
+따라서 전기수가 new video로 inference에 성공한 Video2Description 을 실행해봤다.
+   - frontend 와 backend로 구성되어 코드 실행 시 바로 inference 가능
+   - 우리가 원하는 대로 결과를 얻으려면 코드 분석이 필요
+   - 현재는 docker-compose pull / up 으로 backend 서버 실행 후 localhose:8080/ 에 접속하여 실행
+[!video2description](./video2description.png)
+
+추가적으로 Dense-video-captioning 을 실행해보려는 과정
+   - new video inference 할 시에 grounded-video-description과 비슷한 과정이 필요
+   - 과정을 정리해 놓은 issue가 존재해서 따라해 볼 예정
