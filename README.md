@@ -169,7 +169,7 @@ visualization / own video 로 inference
 
 ### **Video Captioning**
 grounded video description 에서 이미 준비된 (feature extract) test dataset 의 inference 성공
-[!inf](./inf.png)
+![inf](./inf.png)
    - flickr dataset (pretrained model) 사용
    - main.py 를 전기수의 main.py로 대체[링크](https://github.com/Hinterhalter/CCTV_Video_Captioning)
    - vis/flickr-sup-0.1-0.1-0.1-run1 경로 직접 생성
@@ -191,7 +191,7 @@ python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size
    - frontend 와 backend로 구성되어 코드 실행 시 바로 inference 가능
    - 우리가 원하는 대로 결과를 얻으려면 코드 분석이 필요
    - 현재는 docker-compose pull / up 으로 backend 서버 실행 후 localhose:8080/ 에 접속하여 실행
-[!video2description](./video2description.png)
+![video2description](./video2description.png)
 
 추가적으로 Dense-video-captioning 을 실행해보려는 과정
    - new video inference 할 시에 grounded-video-description과 비슷한 과정이 필요
