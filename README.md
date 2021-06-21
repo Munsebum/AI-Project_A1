@@ -196,3 +196,17 @@ python main.py --path_opt cfgs/flickr30k_res101_vg_feat_100prop.yml --batch_size
 추가적으로 Dense-video-captioning 을 실행해보려는 과정
    - new video inference 할 시에 grounded-video-description과 비슷한 과정이 필요
    - 과정을 정리해 놓은 issue가 존재해서 따라해 볼 예정
+
+## 6/21
+
+### **Video Captioning**
+dense-video-captioning-pytorch[링크](https://github.com/ttengwang/dense-video-captioning-pytorch)수행
+- 준비된 feature extract 파일 다운로드 불가
+- Issue가 정리되어 있어 my own video로 feature extract를 진행하려 함
+   - [참고한 ISSUE 링크](https://github.com/ttengwang/dense-video-captioning-pytorch/issues/2)
+   - extract frame-level feature를 진행하려 했으나 [참고 repo 링크](https://github.com/LuoweiZhou/anet2016-cuhk-feature)
+   - classify_video.py 작동 안함. >> 보류
+- 세범형이 찾은 새로운 Repo를 따라해보고자 함 [BMT링크](https://github.com/v-iashin/BMT)
+   - video + sound 로 captioning 을 진행한다.
+   - feature extraction 까지 코드내에 포함된 것으로 보여 과정이 단축될 것으로 예상
+- 계속 시도해도 안되면 Image Captioning 으로 진행할지 고민
