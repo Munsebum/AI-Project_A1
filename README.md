@@ -215,13 +215,13 @@ dense-video-captioning-pytorch[링크](https://github.com/ttengwang/dense-video-
 
 1. tacotron2
 
-tacotron2 모델 train test 완료(영문)
-tacotron2 모델 한국어 학습을 위해 [git link](https://github.com/JoungheeKim/tacotron2) 참고 해서 모델 수정
-tacotron2 모델 train test 완료(한글)
-
-**해야할 일 : inference 파일 수정 필요**
-
+tacotron2 모델 train test 완료(영문)     
+tacotron2 모델 한국어 학습을 위해 [git link](https://github.com/JoungheeKim/tacotron2) 참고 해서 모델 수정      
+tacotron2 모델 train test 완료(한글)     
+       
+**해야할 일 : inference 파일 수정 필요**     
+     
 2. waveglow by 혜원
-
-inference 실행 완료
-kss 파일로 train 실행 중
+    
+inference 실행 완료    
+kss 파일로 train 실행 중     
