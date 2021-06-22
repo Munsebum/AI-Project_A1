@@ -210,3 +210,18 @@ dense-video-captioning-pytorch[링크](https://github.com/ttengwang/dense-video-
    - video + sound 로 captioning 을 진행한다.
    - feature extraction 까지 코드내에 포함된 것으로 보여 과정이 단축될 것으로 예상
 - 계속 시도해도 안되면 Image Captioning 으로 진행할지 고민
+
+### **Text To Speech**
+
+1. tacotron2
+
+tacotron2 모델 train test 완료(영문)
+tacotron2 모델 한국어 학습을 위해 [git link](https://github.com/JoungheeKim/tacotron2) 참고 해서 모델 수정
+tacotron2 모델 train test 완료(한글)
+
+**해야할 일 : inference 파일 수정 필요**
+
+2. waveglow by 혜원
+
+inference 실행 완료
+kss 파일로 train 실행 중
