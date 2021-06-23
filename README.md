@@ -224,4 +224,42 @@ tacotron2 모델 train test 완료(한글)
 2. waveglow by 혜원
     
 inference 실행 완료    
-kss 파일로 train 실행 중     
+kss 파일로 train 실행 중    
+
+## 6/22
+### **video captioning**
+BMT – dense video captioning 환경구축 및 짧은 영상 (15초, 3분) 에 대한 infernence 완료
+1. [참고 Github 링크](https://github.com/v-iashin/BMT)
+2. [참고 블로그 링크](https://blog.naver.com/kimsjpk/222185697248)
+3. [참고 사이트 링크](https://towardsdatascience.com/dense-video-captioning-using-pytorch-392ca0d6971a)
+   - feature extraction 코드가 포함되어있어 원활히 진행가능
+   - video + audio 로 captioning
+   - pretrained model을 이용
+**video captioning 에 대한 회의 내용**
+   - 문제상황 정의
+      - 100초 까지밖에 inference 하지 않는다.
+      - dense captioning 이기 때문에 상황의 시작이 몰려있을 수 있다.
+      - conda 환경이 분리되어 있어 번거롭다.
+      - 출력이 영어로 나온다.
+      - 중복되는 sentence가 많다.
+      - 음성합성에 사용 될 input 즉 video captioning 에서의 output 형식 미지정.
+      - 우리 데이터셋이 뭔지 모른다. (뭘로 Training 했는지)
+   - 해결방안 제시
+      - hyper parameter tuning
+      - 데이터셋에 적절한 영상 탐색 : 현대극, 장면전환 느린 등등
+      - inference 코드의 마지막에 번역 API를 붙여 출력이 한국어로 번역되어 나오게끔 한다.
+         - output 형식을 txt file 및 second, sentence로 지정
+      - yml file tuning 과 subprocess 로 하나의 conda 환경에서 한번에 코드가 돌아가도록 한다.
+      - 영상 찾기 (3분)
+      - 우리가 쓰고있는 pretrained model이 어떤 데이터셋으로 학습됐는지 알아보기
+      - sentence select 작업 (중복제거 및 분배) - 추후 문제 
+
+## 6/23
+### **video captioning**
+BMT - dense video captioning 회의 내용 수행 
+   - dataset
+      - Video : Kinetics (DeepMind) [링크](https://deepmind.com/research/open-source/kinetics)
+      - Audio : Audioset (Google Research) [링크](http://research.google.com/audioset/)
+      - 성능향상을 위해 더 좋은 데이터셋으로 학습이 가능한지 판단해야함
+   - 추가예정
+ 
