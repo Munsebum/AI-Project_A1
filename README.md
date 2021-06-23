@@ -262,4 +262,14 @@ BMT - dense video captioning 회의 내용 수행
       - Audio : Audioset (Google Research) [링크](http://research.google.com/audioset/)
       - 성능향상을 위해 더 좋은 데이터셋으로 학습이 가능한지 판단해야함
    - 추가예정
- 
+
+## 6/23
+
+### **video captioning**
+
+- 이번주 발표 ppt 제작
+- 각자 영상 수집 및 분할
+- BMT_DVC 논문분석 및 이해
+- hyper parameter 의미 분석 
+- subprocess 작업은 개발자 편의를 위한 것이므로 추후로 미룸. 성능이 우선
+- Train Dataset 파악
