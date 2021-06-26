@@ -263,7 +263,7 @@ BMT - dense video captioning 회의 내용 수행
       - 성능향상을 위해 더 좋은 데이터셋으로 학습이 가능한지 판단해야함
    - 추가예정
 
-## 6/23
+## 6/24
 
 ### **video captioning**
 
@@ -273,3 +273,31 @@ BMT - dense video captioning 회의 내용 수행
 - hyper parameter 의미 분석 
 - subprocess 작업은 개발자 편의를 위한 것이므로 추후로 미룸. 성능이 우선
 - Train Dataset 파악
+
+## 6/25
+
+### **video captioning**
+
+- 할일 정리
+1. workflow chart 적을지 -> X
+2. API 코드 돌려보기
+   - 구글 번역 : 희란
+   - 클로바 stt : 세범
+3. 보고서 포맷잡기(목차까지) : 혜원
+4. 성능을 높이기 위한 노력
+   - 음성 검출 search : 희란
+   - 문장 추출 성능 높이기위한 의사결정 : 윤수
+      - inference 시 param 변경 및 영상별 최적점 찾기
+   - Dockerfile 만들어 배포 : 보류
+   - PT있는데 같은 Data로 BMT Training 시 param 바꾸는게 의미있을지 : CV시간 질문
+5. 전기수 영상 확부
+6. captioning txt로 음성 합성해서 시간별로 이어진 음성 확보
+   - 추출 전 구글 API : 희란
+   - 알맞은 format으로 txt파일 추출(한글로) : 윤수
+   - 추출된 txt로 음성 합성 및 시간대별로 붙이기 
+7. 3분짜리 음성, 영상 구해서 합치는 작업 해보기 : 혜원&지우
+8. 7번 사항을 studio가 아닌 파이썬으로 가능한지 검색
+9. 김태리로 학습하기
+   - 전처리 선행
+   - 네이버 클로바 API 선행
+10. BMT_DVC 스터디
