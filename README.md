@@ -300,3 +300,7 @@ BMT - dense video captioning 회의 내용 수행
    - 전처리 선행
    - 네이버 클로바 API 선행
 10. BMT_DVC 스터디
+
+## 6/26
+
+- ppt 탬플릿 씨네마틱한거 찾아보기 
