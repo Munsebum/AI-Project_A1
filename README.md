@@ -276,9 +276,8 @@ BMT - dense video captioning 회의 내용 수행
 
 ## 6/25
 
-### **video captioning**
+### **할일 정리합시다!**
 
-- 할일 정리
 1. workflow chart 적을지 -> X
 2. API 코드 돌려보기
    - 구글 번역 : 희란
