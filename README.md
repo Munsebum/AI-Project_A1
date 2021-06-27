@@ -304,3 +304,19 @@ BMT - dense video captioning 회의 내용 수행
 ## 6/26
 
 - ppt 탬플릿 씨네마틱한거 찾아보기 
+
+## 6/27
+
+### **video captioning**
+
+1. 주말 내내 training / inference parameter 조정하며 최적값을 도출하려 했으나 모델 자체 성능문제가 존재하는 것으로 판단함
+2. 조작하려면 할 수 있겠지만.. 최대한 안하는 방향으로
+3. 우선 얕게라도 프로젝트를 완성시켜 놓고 다른 모델을 찾아가는 것으로 가닥 잡음
+4. timespan 조건, 일정 시간 내 반복 조건, to the camera 조건 으로 문장들을 select
+5. 추후 문장이 더 필요하다면 파라미터 조정을 통해 더 뽑아낼 수 있을것.. (정확도는 보장못함)
+6. 우선 현재의 파라미터는 다음과 같다.
+- i3d feature extraction 시 extraction_fps 15
+- inference 시 pretrained model 사용
+- max_prop_per_vid 500 (proposal 을 최대 500개 추출한다.)
+- nms_tiou_thresh 0.4 (iou 0.4 이상 제거)
+- duration_in_secs 184 (3분 5초짜리 영상)
