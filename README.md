@@ -320,3 +320,20 @@ BMT - dense video captioning 회의 내용 수행
 - max_prop_per_vid 500 (proposal 을 최대 500개 추출한다.)
 - nms_tiou_thresh 0.4 (iou 0.4 이상 제거)
 - duration_in_secs 184 (3분 5초짜리 영상)
+
+## 6/28
+
+### **회의**
+- 보고서 개별로 채워넣기
+- 피피티 템플릿 시네마틱 찾아보기
+- 추출된 개별 음성 하나로 잇는 작업
+- 김태리 학습
+- 읽은 논문들 참고자료로 넣게 다 써놓기
+- 최종 비디오 합성 작업
+- 전기수 영상 최적 파라미터 찾기
+- 새로운 데이터셋 있나 찾기 (ActivityNet Captions와 비슷한 형태)
+- video captioning 새로운 데이터 넣고 training
+   - 한 두개 caption 추가해서 training 되는지 실험
+   - 영상 보며 전체 시간(초), 추출할 시간(시작,끝), 캡션(영어) 정리
+   - 정리한 set으로 json, csv 고쳐서 새로운 데이터셋 만들기 작업
+   - 새로 training 
