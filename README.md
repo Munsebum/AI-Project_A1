@@ -333,7 +333,8 @@ BMT - dense video captioning 회의 내용 수행
 - 전기수 영상 최적 파라미터 찾기
 - 새로운 데이터셋 있나 찾기 (ActivityNet Captions와 비슷한 형태)
 - video captioning 새로운 데이터 넣고 training
-   - 한 두개 caption 추가해서 training 되는지 실험
+   - 한 두개 caption 추가해서 training 되는지 실험(여기서부터막힘 희란아도와줘)
    - 영상 보며 전체 시간(초), 추출할 시간(시작,끝), 캡션(영어) 정리
    - 정리한 set으로 json, csv 고쳐서 새로운 데이터셋 만들기 작업
-   - 새로 training 
+   - 새로 training
+ 
