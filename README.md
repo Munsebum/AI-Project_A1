@@ -337,4 +337,25 @@ BMT - dense video captioning 회의 내용 수행
    - 영상 보며 전체 시간(초), 추출할 시간(시작,끝), 캡션(영어) 정리
    - 정리한 set으로 json, csv 고쳐서 새로운 데이터셋 만들기 작업
    - 새로 training
- 
+
+## 7/4
+
+### **진행상황**
+- 아직도 공유드라이브에서는 5주차 폴더를 쓰고있다.
+- **video captioning**
+   - 새로운 dataset를 추가해서 (feature 추출 다하고) training 중
+   - 성능 개선을 위한 노력과 그 때마다의 성능향상을 기록중
+   - 새로운 parameter 로 model 제작 (64-25 에서 36-15) 
+      - timespan 이 적은 캡션을 도출해내기 위해서
+   - inference 를 위한 우리 영상 제작 완료 (프로젝트 끝나고 폐기요망)
+   - 영화/전기수영상/우리영상 세 개로 inference 진행
+- **음성합성**
+   - 김태리 목소리 학습중 - 이틀차에 성능이 그닥 나아지지 않았음. 문제도출 필요. 성능은 이제 더이상 우리가 건드릴 수 있는 부분이 아니다..
+   - VAD 완료 (음성이 없는 부분에만 음성 설명이 들어갈 수 있게끔)
+   - 예전 음성(low epoch checkpoint) 백업 
+- Docker 작업 
+   - Docker Compose?
+   - Inference Docker? (run)
+   - Video / 음성 각각에 대한 Docker 를 작성하고 추후 one click 하기 위해 Compose 작업 
+- 보고서 및 ppt
+
