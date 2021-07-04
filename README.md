@@ -14,8 +14,8 @@ for BIG DATA Project communication and collaboration
 2. 도커 실행 - 명령어써주기
 3. clone 할거 해주기
 4. 각각 수행하기
-   - 
-   - Video captioning [link](https://github.com/yunsujeon/BMT)  
+- 
+- Video captioning [link](https://github.com/yunsujeon/BMT)  
 
 ## 일지 6/16
 
