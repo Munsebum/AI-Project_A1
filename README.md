@@ -6,9 +6,9 @@ for BIG DATA Project communication and collaboration
 # AI Project_A1
 ### 6/7~7/6
 
-## 프로젝트 Docker로 실행방법
+## 프로젝트 flow 및 실행방법
 
-전체적으로 굴러가는 이미지 그려주기 
+![flow](./flow.png) 
 
 1. 도커 이미지 pull - 링크 붙이기
 2. 도커 실행 - 명령어써주기
