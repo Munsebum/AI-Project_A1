@@ -1,11 +1,23 @@
 # BIG DATA Project_A1
+### 5/10~6/4
 for BIG DATA Project communication and collaboration
-
 - 2021/05/27 gitkraken을 이용한 관리
 
 # AI Project_A1
+### 6/7~7/6
 
-## 6/16
+## 프로젝트 Docker로 실행방법
+
+전체적으로 굴러가는 이미지 그려주기 
+
+1. 도커 이미지 pull - 링크 붙이기
+2. 도커 실행 - 명령어써주기
+3. clone 할거 해주기
+4. 각각 수행하기
+   - 
+   - Video captioning [link](https://github.com/yunsujeon/BMT)  
+
+## 일지 6/16
 
 ### **video captioning**
 
