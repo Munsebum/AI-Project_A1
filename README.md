@@ -20,8 +20,9 @@ for BIG DATA Project communication and collaboration
 - Video captioning [link](https://github.com/yunsujeon/BMT)  
 
 ## docker image [link](https://hub.docker.com/repository/docker/heira96/video_with_audio_description)
-![dockerimage](./dockerimage.jpg)
-    docker push heira96/video_with_audio_description:1.0
+![dockerimage](./dockerimage.jpg)   
+
+``` docker push heira96/video_with_audio_description:1.0 ```
 ## 일지 6/16
 
 ### **video captioning**
