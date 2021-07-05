@@ -371,3 +371,16 @@ BMT - dense video captioning 회의 내용 수행
    - Video / 음성 각각에 대한 Docker 를 작성하고 추후 one click 하기 위해 Compose 작업 
 - 보고서 및 ppt
 
+## 7/5
+- **음성합성**
+   - 5일 train 결과 목소리 품질이 예상보다 너무 낮음
+   - 음성을 문장 단위로 넣은게 아닌 임의로 문장을 끊어 생긴 문제라고 판단
+   - 음성을 문장 단위로 넣기 위해 품질을 떨어뜨림
+   - 너무 긴 문장을 제거하고 다시 train set 구축
+   - trian
+- **video captioning**
+   - 새로운 dataset 으로 train 중 prop train 에서 pkl파일에 비디오가 존재하지 않는 오류 존재
+   - 이후 오류 및 해결 정리
+      - v_aaaaa 비디오가 없다는 것은 v_aaaaa\t와 v_aaaaa+space 두 개가 존재했기 때문 - csv 파일 다시 생성 
+      - v_xsEDWomvSek_ 와 v_D1UqQgXMBXA_ 삭제 (CUDA out of memory)
+      - tmp에 extracted_targets_for_train.pkl 이 존재하면 그걸 그대로 불러오는데 이전 데이터부터 쌓여온거여서 새로운 데이터에 대해 pkl을 새로 만들지 않았다. 지워주고 다시 training 하면서 만들어야된다. 다시만들기 (captioning training epoch 20 으로 다시 돌리기)
