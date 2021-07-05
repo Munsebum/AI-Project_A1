@@ -14,9 +14,14 @@ for BIG DATA Project communication and collaboration
 2. 도커 실행 - 명령어써주기
 3. clone 할거 해주기
 4. 각각 수행하기
-- 
+- tacotron2 [link](https://github.com/raneelulu/tacotron2)
+- waveglow [link](https://github.com/raneelulu/waveglow)
+- VAD [link](https://github.com/raneelulu/VAD)
 - Video captioning [link](https://github.com/yunsujeon/BMT)  
 
+## docker image [link](https://hub.docker.com/repository/docker/heira96/video_with_audio_description)
+![dockerimage](./dockerimage.jpg)
+    docker push heira96/video_with_audio_description:1.0
 ## 일지 6/16
 
 ### **video captioning**
