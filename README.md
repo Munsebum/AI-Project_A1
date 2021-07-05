@@ -8,7 +8,7 @@ for BIG DATA Project communication and collaboration
 
 ## 프로젝트 flow 및 실행방법
 
-![flow](./flow.png) 
+![dockerconda](./dockerconda.jpg) 
 
 1. 도커 이미지 pull - 링크 붙이기
 2. 도커 실행 - 명령어써주기
