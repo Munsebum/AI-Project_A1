@@ -10,14 +10,14 @@ for BIG DATA Project communication and collaboration
 
 ![dockerconda](./dockerconda.jpg) 
 
-1. 도커 이미지 pull - 링크 붙이기
-2. 도커 실행 - 명령어써주기
-3. clone 할거 해주기
-4. 각각 수행하기
+1. Docker Image pull - 아래에 Image link 표기 
+2. Docker run 
+3. clone Repository
 - tacotron2 [link](https://github.com/raneelulu/tacotron2)
 - waveglow [link](https://github.com/raneelulu/waveglow)
 - VAD [link](https://github.com/raneelulu/VAD)
 - Video captioning [link](https://github.com/yunsujeon/BMT)  
+4. 각각 수행
 
 ## docker image [link](https://hub.docker.com/repository/docker/heira96/video_with_audio_description)
 ![dockerimage](./dockerimage.jpg)   
